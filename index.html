@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>AGASTU | Collectors' Edition</title>
+  <meta name="description" content="Discover the Agastu collectible collection.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">THE AGASTU COLLECTION • MADE FOR COLLECTORS</div>
+
+  <header class="header">
+    <a class="brand" href="#home">AGASTU<span>®</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">Our Story</a>
+    </nav>
+    <button id="cart-toggle">BAG (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">COLLECT. DISPLAY. OWN THE MOMENT.</p>
+      <h1>Small Models.<br><span>Big Legends.</span></h1>
+      <p>Discover collectible model sets designed for aviation fans and collectors.</p>
+      <a class="button" href="#collection">EXPLORE COLLECTION ↗</a>
+      <img
+        class="hero-image"
+        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
+        alt="Aircraft in flight">
+    </section>
+
+    <section class="collection" id="collection">
+      <p class="eyebrow">FIND YOUR NEXT FAVOURITE</p>
+      <h2>The Collection<span>.</span></h2>
+
+      <div class="filters">
+        <button data-filter="all">All Pieces</button>
+        <button data-filter="aviation">Aviation</button>
+        <button data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">THE AGASTU STORY</p>
+      <h2>Built for the love of detail.</h2>
+      <p>We celebrate remarkable designs, collectible models and the stories that inspire us.</p>
+      <a class="button" href="#collection">DISCOVER THE COLLECTION</a>
+    </section>
+  </main>
+
+  <footer>
+    <h2>AGASTU®</h2>
+    <p>COLLECT YOUR OWN LEGEND.</p>
+    <p>© <span id="year"></span> AGASTU. All rights reserved.</p>
+  </footer>
+
+  <div class="cart-backdrop" id="cart-backdrop"></div>
+  <aside class="cart-panel" id="cart-panel">
+    <button id="cart-close" class="close-button">✕ Close</button>
+    <h2>Your Bag<span>.</span></h2>
+    <div id="cart-items"></div>
+    <h3>Subtotal: <span id="cart-total">₹0</span></h3>
+    <p>Delivery and availability will be confirmed before ordering.</p>
+    <button class="button" id="checkout">ORDER VIA WHATSAPP ↗</button>
+  </aside>
+</body>
+</html>
