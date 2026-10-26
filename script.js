@@ -14,7 +14,7 @@ const products = [
     id: 2,
     name: "Charles Oliveira Collector Set",
     price: 25,
-    image: "charles-oliveira.png",
+    image: "charles-oliviera.png",
     category: "fighters",
     description: "A themed collectible set inspired by Charles Oliveira."
   },
