@@ -9,7 +9,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Charles Oliviera Collector Set",
+    name: "Charles-Oliviera Collector Set",
     price: 25,
     image: "charles-oliveira.png",
     category: "fighters"
