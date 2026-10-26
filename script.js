@@ -4,56 +4,56 @@ const products = [
     id: 1,
     name: "Alex Pereira Collector Set",
     price: 25,
-    image: "images/alex-pereira.png",
+    image: "alex-pereira.png",
     category: "fighters"
   },
   {
     id: 2,
     name: "Charles Oliveira Collector Set",
     price: 25,
-    image: "images/charles-oliveira.png",
+    image: "charles-oliveira.png",
     category: "fighters"
   },
   {
     id: 3,
     name: "Justin Gaethje Collector Set",
     price: 25,
-    image: "images/justin-gaethje.png",
+    image: "justin-gaethje.png",
     category: "fighters"
   },
   {
     id: 4,
     name: "Khabib Nurmagomedov Collector Set",
     price: 25,
-    image: "images/khabib.png",
+    image: "khabib.png",
     category: "fighters"
   },
   {
     id: 5,
     name: "Islam Makhachev Collector Set",
     price: 25,
-    image: "images/islam.png",
+    image: "islam.png",
     category: "fighters"
   },
   {
     id: 6,
     name: "Ilia Topuria Collector Set",
     price: 25,
-    image: "images/ilia-topuria.png",
+    image: "ilia-topuria.png",
     category: "fighters"
   },
   {
     id: 7,
     name: "Conor McGregor Collector Set",
     price: 25,
-    image: "images/conor-mcgregor.png",
+    image: "conor-mcgregor.png",
     category: "fighters"
   },
   {
     id: 8,
     name: "Max Holloway Collector Set",
     price: 25,
-    image: "images/max-holloway.png",
+    image: "max-holloway.png",
     category: "fighters"
   },
   {
