@@ -5,71 +5,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#090909">
-  <title>AGASTU | Collectors' Edition</title>
-  <meta name="description" content="Discover the Agastu collectible collection.">
+  <meta name="description" content="Discover collectible fighter toy sets at AGASTU. Explore the collection and find your next favourite.">
+  <title>AGASTU | Collectors' Arena</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement">THE AGASTU COLLECTION • MADE FOR COLLECTORS</div>
+  <div class="announcement">
+    THE COLLECTORS' ARENA · DISCOVER YOUR NEXT FAVOURITE
+  </div>
 
-  <header class="header">
-    <a class="brand" href="#home">AGASTU<span>®</span></a>
+  <header class="navbar">
+    <a href="#" class="logo">AGASTU<span>.</span></a>
+
     <nav>
       <a href="#home">Home</a>
       <a href="#collection">Collection</a>
-      <a href="#about">Our Story</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <button id="cart-toggle">BAG (<span id="cart-count">0</span>)</button>
+
+    <button class="cart-button" id="cart-toggle" aria-label="Open shopping cart">
+      Cart <span id="cart-count">0</span>
+    </button>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <p class="eyebrow">COLLECT. DISPLAY. OWN THE MOMENT.</p>
-      <h1>Small Models.<br><span>Big Legends.</span></h1>
-      <p>Discover collectible model sets designed for aviation fans and collectors.</p>
-      <a class="button" href="#collection">EXPLORE COLLECTION ↗</a>
-      <img
-        class="hero-image"
-        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
-        alt="Aircraft in flight">
-    </section>
-
-    <section class="collection" id="collection">
-      <p class="eyebrow">FIND YOUR NEXT FAVOURITE</p>
-      <h2>The Collection<span>.</span></h2>
-
-      <div class="filters">
-        <button data-filter="all">All Pieces</button>
-        <button data-filter="aviation">Aviation</button>
-        <button data-filter="accessories">Accessories</button>
+      <div class="hero-content">
+        <p class="eyebrow">BUILT FOR THE COLLECTORS</p>
+        <h1>THE ART OF<br><span>THE FIGHT.</span></h1>
+        <p class="hero-description">
+          Discover collectible fighter sets made for fans,
+          collectors and lovers of combat sports.
+        </p>
+        <a class="button button-gold" href="#collection">Explore Collection ↗</a>
+        <p class="hero-note">YOUR COLLECTION. YOUR LEGACY.</p>
       </div>
 
-      <div class="product-grid" id="product-grid"></div>
+      <div class="hero-art">
+        <div class="hero-orbit"></div>
+        <div class="hero-mark">A</div>
+        <div class="hero-caption">
+          <span>AGASTU ORIGINALS</span>
+          <span>COLLECTION 001</span>
+        </div>
+      </div>
     </section>
 
-    <section class="about" id="about">
-      <p class="eyebrow">THE AGASTU STORY</p>
-      <h2>Built for the love of detail.</h2>
-      <p>We celebrate remarkable designs, collectible models and the stories that inspire us.</p>
-      <a class="button" href="#collection">DISCOVER THE COLLECTION</a>
+    <section class="ticker" aria-label="Store highlights">
+      <span>COLLECT</span><b>✦</b>
+      <span>DISPLAY</span><b>✦</b>
+      <span>CELEBRATE THE FIGHT</span><b>✦</b>
+      <span>COLLECT</span>
+    </section>
+
+    <section class="collection section" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE LINEUP</p>
+          <h2>Featured <span>Collection</span></h2>
+          <p class="muted">Find the set that belongs in your collection.</p>
+        </div>
+        <span class="collection-label">COLLECTOR SERIES / 001</span>
+      </div>
+
+      <div class="shop-tools">
+        <input id="search-input" type="search"
+          placeholder="Search your favourite fighter..."
+          aria-label="Search products">
+
+        <select id="category-filter" aria-label="Filter products">
+          <option value="all">All products</option>
+          <option value="fighters">Fighter sets</option>
+          <option value="sets">Complete sets</option>
+        </select>
+
+        <select id="sort-filter" aria-label="Sort products">
+          <option value="default">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+
+      <p id="product-count" class="muted"></p>
+      <div class="product-grid" id="product-grid"></div>
+      <p id="empty-message" class="empty-message" hidden>
+        No products found. Try another search.
+      </p>
+    </section>
+
+    <section class="manifesto" id="about">
+      <p class="eyebrow">MORE THAN A DISPLAY</p>
+      <h2>Made for the love<br>of <span>the game.</span></h2>
+      <p>
+        AGASTU is a home for collectors who appreciate the athletes,
+        stories and unforgettable moments behind combat sports.
+        Explore the collection and make your display your own.
+      </p>
+    </section>
+
+    <section class="benefits section">
+      <article>
+        <span class="benefit-icon">✦</span>
+        <h3>Collector Focus</h3>
+        <p>Explore themed sets inspired by the world of fighting.</p>
+      </article>
+      <article>
+        <span class="benefit-icon">◇</span>
+        <h3>Easy Browsing</h3>
+        <p>Search, compare prices and discover your favourites.</p>
+      </article>
+      <article>
+        <span class="benefit-icon">↗</span>
+        <h3>Made for Fans</h3>
+        <p>Build a display that reflects your passion.</p>
+      </article>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Questions about<br><span>the collection?</span></h2>
+      <p class="muted">Contact us for product enquiries and order information.</p>
+      <a class="button button-outline"
+         href="mailto:shivamparmar28shivam@gmail.com">
+        Email AGASTU ↗
+      </a>
     </section>
   </main>
 
-  <footer>
-    <h2>AGASTU®</h2>
-    <p>COLLECT YOUR OWN LEGEND.</p>
+  <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart" hidden>
+    <div class="cart-heading">
+      <h2>Your Cart</h2>
+      <button id="cart-close" class="icon-button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <span>Subtotal</span>
+      <strong id="cart-total">₹0</strong>
+    </div>
+    <p class="muted small">
+      Prices are illustrative until confirmed. Shipping is not included.
+    </p>
+    <button id="checkout-button" class="button button-gold full-width">
+      Send Order Enquiry
+    </button>
+    <button id="clear-cart" class="text-button">Clear cart</button>
+  </aside>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <dialog id="product-dialog" class="product-dialog">
+    <button id="dialog-close" class="icon-button dialog-close"
+      aria-label="Close product details">✕</button>
+    <div id="product-details"></div>
+  </dialog>
+
+  <footer class="footer">
+    <a href="#home" class="logo">AGASTU<span>.</span></a>
+    <p>Collect your favourites. Celebrate the fighters.</p>
+    <p class="footer-note">
+      AGASTU is an independent concept store and is not affiliated with
+      any fighter, sports promotion or trademark owner unless explicitly stated.
+    </p>
     <p>© <span id="year"></span> AGASTU. All rights reserved.</p>
   </footer>
-
-  <div class="cart-backdrop" id="cart-backdrop"></div>
-  <aside class="cart-panel" id="cart-panel">
-    <button id="cart-close" class="close-button">✕ Close</button>
-    <h2>Your Bag<span>.</span></h2>
-    <div id="cart-items"></div>
-    <h3>Subtotal: <span id="cart-total">₹0</span></h3>
-    <p>Delivery and availability will be confirmed before ordering.</p>
-    <button class="button" id="checkout">ORDER VIA WHATSAPP ↗</button>
-  </aside>
 </body>
 </html>
